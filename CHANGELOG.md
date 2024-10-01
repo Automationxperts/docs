@@ -1,5 +1,13 @@
 # docs-diary
 
+## 1.6.5
+
+### Patch Changes
+
+- [#407](https://github.com/dipakparmar/docs-diary/pull/407) [`59a53e1`](https://github.com/dipakparmar/docs-diary/commit/59a53e1caf55225a4c60217e1dbec5a8249ae7ce) Thanks [@dipakparmar](https://github.com/dipakparmar)! - feat: use ts types for umami plugin
+
+- [#409](https://github.com/dipakparmar/docs-diary/pull/409) [`4a07499`](https://github.com/dipakparmar/docs-diary/commit/4a07499736083741f1318d8a1f208ef42040aa0e) Thanks [@dipakparmar](https://github.com/dipakparmar)! - docs: update git basics with instructions for the git open alias.
+
 ## 1.6.4
 
 ### Patch Changes
