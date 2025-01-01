@@ -7,26 +7,26 @@ function ShareButton(props) {
   const location = useLocation();
   const { colorMode } = useColorMode();
   const twitterShareURL =
-    'https://twitter.com/share?url=https://docs.dipak.tech' +
+    'https://twitter.com/share?url=https://devopsify.netlify.app' +
     `${location.pathname}` +
     '&text=Check out this article on ' +
     `${props.title}` +
     '' +
-    '&hashtags=iamdipakparmar,docsdiary,opensource';
+    '&hashtags=automationexpert,docs,opensource';
   const linkedinShareURL =
-    'http://www.linkedin.com/shareArticle?mini=true&url=https://docs.dipak.tech' +
+    'http://www.linkedin.com/shareArticle?mini=true&url=https://devopsify.netlify.app' +
     `${location.pathname}` +
-    '&source=docs.dipak.tech';
+    '&source=devopsify.netlify.app';
   const facebookShareURL =
-    'https://www.facebook.com/sharer/sharer.php?u=https://docs.dipak.tech' +
+    'https://www.facebook.com/sharer/sharer.php?u=https://devopsify.netlify.app' +
     `${location.pathname}`;
   const emailShareURL =
     'mailto:?subject=Shared Article | ' +
     `${props.title}` +
-    " | Dipak's Docs Diary " +
+    " | devopsify's Docs" +
     '&body=Check out this article on ' +
     `${props.title}` +
-    ' https://docs.dipak.tech' +
+    ' https://devopsify.netlify.app' +
     `${location.pathname}`;
 
   const info = [
