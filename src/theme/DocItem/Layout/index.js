@@ -58,10 +58,10 @@ export default function DocItemLayout({ children }) {
         <br></br>
         <Giscus
           id="comments"
-          repo="dipakparmar/docs-diary"
-          repoId="MDEwOlJlcG9zaXRvcnkyNzM4NTUzOTk="
+          repo="Automationxperts/comments"
+          repoId="R_kgDONkgPvA"
           category="Comments"
-          categoryId="DIC_kwDOEFKzp84CPOcp"
+          categoryId="DIC_kwDONkgPvM4ClpZs"
           mapping="pathname"
           reactionsEnabled="1"
           emitMetadata="0"
