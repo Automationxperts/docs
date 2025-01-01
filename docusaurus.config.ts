@@ -1,7 +1,7 @@
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import { EnumChangefreq } from 'sitemap';
-import type { Options as UmamiOptions } from '@dipakparmar/docusaurus-plugin-umami';
+// import type { Options as UmamiOptions } from '@dipakparmar/docusaurus-plugin-umami';
 
 const isDeployPreview =
   process.env.VERCEL_ENV === 'development' ||
@@ -13,20 +13,20 @@ const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
 const config: Config = {
-  title: `Dipak's Docs Diary`,
+  title: `AUTOMATION EXPERT`,
   tagline: '',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://docs.dipak.tech',
+  url: 'https://devopsify.netlify.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'dipakparmar', // Usually your GitHub org/user name.
-  projectName: 'docs-diary', // Usually your repo name.
+  organizationName: 'automationxpert', // Usually your GitHub org/user name.
+  projectName: 'tech-docs', // Usually your repo name.
   trailingSlash: false, // Remove trailing slash at the end of url
 
   onBrokenLinks: 'throw',
@@ -57,7 +57,7 @@ const config: Config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           sidebarCollapsible: false,
-          editUrl: 'https://github.com/dipakparmar/docs-diary/edit/main/',
+          editUrl: 'https://github.com/Automationxperts/docs/edit/main/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -93,15 +93,15 @@ const config: Config = {
       },
     },
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: 'dark',
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: `Dipak's Docs Diary`,
+      title: `Devopsify Docs`,
       hideOnScroll: false,
       logo: {
-        alt: 'Docs Diary',
+        alt: 'Technical Docs',
         src: 'img/logo.svg',
       },
       items: [
@@ -117,13 +117,13 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://dipak.to/twitter?utm_source=docs.dipak.tech&utm_medium=nav_link&utm_campaign=dipaks_docs_diary',
+          href: 'https://twitter.com/Automationxpert',
           position: 'right',
           className: 'header-twitter-link',
           'aria-label': 'Twitter',
         },
         {
-          href: 'https://github.com/dipakparmar/docs-diary?utm_source=docs.dipak.tech&utm_medium=nav_link',
+          href: 'https://github.com/Automationxperts/docs',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -136,12 +136,12 @@ const config: Config = {
     },
     footer: {
       // style: 'light',
-      copyright: `Copyright © 2020-${new Date().getFullYear()} Dipak's Docs Diary. <a href="https://docusaurus.io/">Built with Docusaurus.</a>`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()} Automation Expert, Inc.`,
     },
     algolia: {
-      appId: 'NOKG2EH40V',
-      apiKey: '6711f63fe1e318da1f4bb8b811d59df3',
-      indexName: 'dipak',
+      appId: 'L1RXPNBXCJ',
+      apiKey: '2ab0d916d62484fc18abaa797ac8cf44',
+      indexName: 'automation',
       contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
@@ -170,6 +170,7 @@ const config: Config = {
         },
       },
     ],
+    /*
     [
       '@dipakparmar/docusaurus-plugin-umami',
       {
@@ -180,6 +181,8 @@ const config: Config = {
         dataDomains: 'docs.dipak.tech',
       } as UmamiOptions,
     ],
+    */
+
     async function tailwindcss() {
       return {
         name: 'docusaurus-tailwindcss',
